@@ -22,7 +22,37 @@ echo $myCar->message();
 $str = "Hello World from Bangladesh";
 echo strlen($str) . PHP_EOL;
 echo str_word_count($str) . PHP_EOL;
-echo strpos($str, "from");
+echo strpos($str, "from") . PHP_EOL;
+
+
+
+function modifyArray($arr){
+    foreach ($arr as $index => $value){
+        $arr[$index] = $value * 2;
+    }
+    return $arr;
+}
+$data = [1,2,3,4];
+$newData = modifyArray($data);
+
+print_r($data);
+print_r($newData);
+
+
+
+function modifyArray2(&$arr2){
+    foreach ($arr as $index => $value){
+        $arr2[$index] = $value * 2;
+    }
+    return $arr2;
+}
+$data2 = [1,2,3,4];
+$newData2 = modifyArray2($data2);
+
+print_r($data2);
+print_r($newData2);
+
+
 
 
 
