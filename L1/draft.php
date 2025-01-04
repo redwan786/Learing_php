@@ -49,4 +49,20 @@ $newData2 = modifyArray2($data2);
 
 print_r($data2);
 print_r($newData2);
+
+function countVowels($string)
+{
+    $vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    $count = 0;
+    $length = strlen($string); // Store string length to avoid recomputation
+    for ($i = 0; $i < $length; $i++) {
+        if (in_array($string[$i], $vowels)) {
+            $count++;
+        }
+    }
+    return $count;
+}
+
+$string = "PhpIsNotTooHardToLearn";
+echo "Number of vowels in the string: " . countVowels($string);
 ?>
