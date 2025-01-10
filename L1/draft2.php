@@ -5,8 +5,18 @@ while ($i < 6) {
     echo $i . "\t";
     $i++;
 }
+for ($i = 1; $i < 6; $i++) {
+    if ($i == 3) break;
+
+}
+
 
 
 $num = rand(1, 100);
 echo $num;
+
+
+
+
+
 ?>
