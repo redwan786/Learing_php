@@ -2,22 +2,68 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Draft</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Website Layout Example</title>
 	<style>
-		nav a{
-			text-decoration: none;
+		header, nav {
+			background-color: #f4f4f4;
+			text-align: center;
+			padding: 10px;
 		}
+		
+		aside {
+			float: right;
+			width: 30%;
+			padding: 20px;
+			background-color: #f9f9f9;
+		}
+		
+		footer {
+			clear: both;
+		}
+	
+	
 	</style>
 </head>
 <body>
 	<header>
 		<h1>Welcome to My Website</h1>
-		<nav>
-			<a href="#home">Home</a>
-			<a href="#about">About</a>
-			<a href="#contact">Contact</a>
-		</nav>
 	</header>
-
+	
+	<nav>
+		<ul style="list-style: none; padding: 0;">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<section>
+		<article>
+			<h2>Main Article</h2>
+			<p>This is the main content of the page. It is designed to provide important information to the
+			   visitors.</p>
+		</article>
+		
+		<details>
+			<summary>Additional Information</summary>
+			<p>Click here to learn more about this topic. This section can expand and collapse as needed.</p>
+		</details>
+		
+		<details>
+			<summary>Click to expand</summary>
+			<p>This is hidden content revealed on click.</p>
+		</details>
+	
+	</section>
+	
+	<aside>
+		<h2>Sidebar</h2>
+		<p>This is the sidebar area where you can display additional information, links, or advertisements.</p>
+	</aside>
+	
+	<footer>
+		<p>&copy; 2025 My Website. All rights reserved.</p>
+	</footer>
 </body>
 </html>
