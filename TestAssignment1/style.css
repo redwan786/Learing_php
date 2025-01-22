@@ -27,6 +27,7 @@ p {
     padding: 0;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap; /* Ensure navbar adapts in smaller screens */
 }
 
 .navbar ul li {
@@ -59,6 +60,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center; /* Center content for smaller screens */
 }
 
 .cat-card {
@@ -117,4 +119,31 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cat-card {
+        width: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+
+    .navbar ul {
+        justify-content: center; /* Center navbar items on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cat-card {
+        width: 100%; /* Full-width for very small screens */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center; /* Align vertically stacked items to center */
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add spacing between stacked items */
+    }
 }
